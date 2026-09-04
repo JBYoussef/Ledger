@@ -50,9 +50,43 @@ ORDER BY occurred_at DESC;
 
 --------------------------------------------------------------------------------
 
+-- ASC
+
+-- Define uma ordenação ascendente.
+-- É o comportamento padrão do ORDER BY, portanto não é obrigatório escrever ASC.
+--
+-- Exemplo:
+--
+-- ORDER BY amount ASC;
+--
+-- 10
+-- 20
+-- 50
+-- 100
+
+
+--------------------------------------------------------------------------------
+
+-- DESC
+
+-- Define uma ordenação descendente.
+--
+-- Exemplo:
+--
+-- ORDER BY amount DESC;
+--
+-- 100
+-- 50
+-- 20
+-- 10
+
+
+--------------------------------------------------------------------------------
+
 -- A lógica pode ser entendida assim:
 --
 -- FROM      → de onde vêm os dados?
 -- WHERE     → quais registros queremos?
 -- SELECT    → quais colunas queremos mostrar?
 -- ORDER BY  → em que ordem queremos mostrar?
+
