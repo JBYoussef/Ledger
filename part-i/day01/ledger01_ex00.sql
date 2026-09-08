@@ -24,7 +24,7 @@ ORDER BY name, source;
 -- da primeira consulta.
 --
 -- As consultas precisam retornar o mesmo número de colunas,
--- e as colunas correspondentes precisam ter tipos de dados compatíveis.
+-- e as colunas correspondentes precisam ter tipos de dados compatíveis, não necessariamente com os mesmos nomes.
 --
 -- Por padrão, UNION remove registros duplicados.
 
