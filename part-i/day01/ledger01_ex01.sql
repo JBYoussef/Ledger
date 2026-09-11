@@ -1,9 +1,9 @@
 SELECT
     transfer_group
 FROM ledger_entries
-WHERE direction = 'DEBIT'
+WHERE direction = 'DEBIT';
 
-EXCEPT
+--EXCEPT
 
 SELECT
     transfer_group
