@@ -23,6 +23,9 @@ ORDER BY amount_bucket, amount;
 
 -- Define a condição que será avaliada.
 -- Se a condição for verdadeira, o valor definido após o THEN será retornado.
+-- Cada WHEN é avaliado na ordem em que aparece, e a primeira condição verdadeira determina o resultado.
+-- Cada WHEN é seguido por um THEN, que define o valor a ser retornado se a condição for verdadeira, e o ELSE define o valor a ser retornado se nenhuma das condições for verdadeira.
+-- O valor retornado pelo CASE é o valor da primeira condição WHEN que for verdadeira. Se nenhuma condição for verdadeira, o valor definido no ELSE será retornado (ou NULL se não houver ELSE).
 
 -------------------------------------------------------------------------------
 
