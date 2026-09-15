@@ -24,10 +24,9 @@ ORDER BY receipt_line;
 
 -- qual tabela queremos relacionar
 -- É usado para relacionar duas ou mais tabelas.
--- Permite combinar informações de tabelas diferentes com base
--- em uma condição de relacionamento definida no ON.
--- Um JOIN simples (INNER JOIN) retorna apenas os registros
--- que possuem correspondência entre as tabelas.
+-- Permite combinar informações de tabelas diferentes com base em uma condição de relacionamento definida no ON.
+-- Não importa qual variavel esta a esquerda qual a direita da sinal condicional, oque importa é o resultado da condição
+-- Um JOIN simples (INNER JOIN) retorna apenas os registros que possuem correspondência entre as tabelas, ou seja, apenas os registros que atendem à condição especificada no ON.
 
 --------------------------------------------------------------------------------
 
