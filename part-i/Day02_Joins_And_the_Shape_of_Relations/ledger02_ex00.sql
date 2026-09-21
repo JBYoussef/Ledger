@@ -1,4 +1,7 @@
-SELECT *
+SELECT
+    merchants.id,
+    merchants.name,
+    merchants.category_id
 FROM merchants
 LEFT JOIN ledger_entries
     ON merchants.id = ledger_entries.merchant_id
