@@ -23,13 +23,17 @@ ORDER BY id DESC;
 -- Não precisamos definir a condição de junção explicitamente, pois o NATURAL JOIN faz isso automaticamente com base nas colunas comuns ou seja, ele usa as colunas com o mesmo nome e tipo de dados para realizar a junção.
 -- No entanto, é importante ter cuidado ao usar o NATURAL JOIN, pois ele pode levar a resultados inesperados se houver colunas com o mesmo nome em ambas as tabelas que não deveriam ser usadas para a junção.
 -- Caso tenham o mesmo nome, mas tipos de dados diferentes, o NATURAL JOIN não funcionará corretamente e resultará em um erro. Portanto, é recomendável revisar cuidadosamente as tabelas envolvidas antes de usar o NATURAL JOIN para garantir que ele produza os resultados desejados.
+
 -- Supondo que queremos 'NATURAL JOIN' a tabela1 e a tabela2, podemos usar a seguinte sintaxe:
+
 -- SELECT *
 -- FROM tabela1
 -- NATURAL JOIN tabela2;
+
 -- Supondo que ambas as tabelas possuem duas colunas com o mesmo nome e tipo de dados compativeos, o NATURAL JOIN irá combinar os registros dessas tabelas com base nessas colunas comuns, retornando apenas os registros que possuem correspondência em ambas as tabelas.
 -- Seria como se sintactimante fosse adicionado depois do NATURAL JOIN a cláusula ON, que especifica as colunas comuns para a junção. No entanto, o NATURAL JOIN faz isso automaticamente, sem a necessidade de escrever explicitamente a condição de junção.
--- EXemplo:
+
+-- Exemplo:
 --  ON tabela1.coluna_comum = tabela2.coluna_comum
 --  AND tabela1.outra_coluna_comum = tabela2.outra_coluna_comum
 --  ...
