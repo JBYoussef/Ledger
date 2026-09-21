@@ -27,6 +27,7 @@ ORDER BY receipt_line;
 -- Permite combinar informações de tabelas diferentes com base em uma condição de relacionamento definida no ON.
 -- Não importa qual variavel esta a esquerda qual a direita da sinal condicional, oque importa é o resultado da condição
 -- Um JOIN simples (INNER JOIN) retorna apenas os registros que possuem correspondência entre as tabelas, ou seja, apenas os registros que atendem à condição especificada no ON.
+-- Cada 'JOIN' deve possuir o próprio 'ON' para a condição que definirá como está relacionada com as outras tabelas, desde a principal, que é no caso a definida no 'FROM' assim como as outras, mas não pode definir regras com tabelas que naquele ponto da query ainda não foram adicionadas a cadeia de JOINS
 
 --------------------------------------------------------------------------------
 
